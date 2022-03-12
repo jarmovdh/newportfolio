@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap");
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.header a {
+  margin: 0 28px;
+  text-decoration: none;
+  color: #181818;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .page {
+  position: absolute;
+}
+
+.container .page .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .page .inner h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 52px;
+  letter-spacing: 0.1rem;
+}
+
+.container .page .inner h1 .line-wrap {
+  overflow: hidden;
+  height: 66px;
+}
+
+.container .page .inner p {
+  font-family: "Poppins";
+  margin-top: 200px;
+  width: 340px;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=App.css.map */
