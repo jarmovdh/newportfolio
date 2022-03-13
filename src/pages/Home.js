@@ -3,6 +3,7 @@ import AnimatedPage from "../components/AnimatedPage";
 import { Title } from "../components/Title";
 import Featured from "../components/Featured/Featured";
 import AboutSection from "../components/AboutSection/AboutSection";
+import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       </div>
       <Featured />
       <AboutSection />
+      <Gallery />
     </AnimatedPage>
   );
 };
