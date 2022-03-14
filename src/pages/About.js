@@ -5,7 +5,7 @@ import { Title } from "../components/Title";
 const About = () => {
   return (
     <AnimatedPage>
-      <div className="inner">
+      <div className="inner" data-scroll-container>
         <Title lineContent="About Page" lineContent2={"Learn More"} />
         <div>
           <p className="info">

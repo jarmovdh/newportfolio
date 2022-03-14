@@ -4,7 +4,7 @@ import "./AboutSection.css";
 
 const AboutSection = () => {
   return (
-    <section className={"about-section"}>
+    <section className={"about-section"} data-scroll-section>
       <SectionHeader title="about" />
       <div className="about-text" id="headline">
         QV Studio is an Amsterdam based creative agency with a focus on
