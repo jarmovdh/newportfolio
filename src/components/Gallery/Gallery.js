@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Gallery.css";
+import "./Gallery.scss";
 
 const images = [
   {
@@ -47,7 +47,7 @@ function GalleryItem({
         </div>
         <div
           className="gallery-item-image"
-          style={{ backgroundImage: `url($src)` }}
+          style={{ backgroundImage: `url(${src})` }}
         ></div>
       </div>
       <div />
