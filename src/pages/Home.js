@@ -51,7 +51,7 @@ const Home = () => {
                 lineContent2={"Full Service Agency"}
               />
               <div>
-                <p className="info">
+                <p className="info" data-scroll-section>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Harum explicabo sed voluptatem et pariatur corporis impedit
                   aperiam repellendus nesciunt illum. Sapiente facilis ea,
