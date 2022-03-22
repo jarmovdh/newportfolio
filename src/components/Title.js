@@ -19,7 +19,7 @@ export const Title = ({ lineContent, lineContent2 }) => {
   }, [line1, line2]);
 
   return (
-    <h1 className="page-title">
+    <h1 className="page-title" data-scroll-section>
       <div className="line-wrap">
         <div ref={(el) => (line1 = el)} className="line">
           {lineContent}
