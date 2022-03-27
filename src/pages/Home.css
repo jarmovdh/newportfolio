@@ -33,6 +33,25 @@
   margin-top: 10px;
 }
 
+.home-section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.home-section-right h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transform: rotateY(0deg) rotate(90deg);
+          transform: rotateY(0deg) rotate(90deg);
+  border-bottom: 2px solid #191919;
+}
+
 .absolute {
   position: fixed;
   top: 0;
@@ -41,5 +60,12 @@
   right: 0;
   background-color: black;
   z-index: 1;
+}
+
+.home-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 /*# sourceMappingURL=Home.css.map */

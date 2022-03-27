@@ -4,26 +4,30 @@ body {
 }
 
 .header {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   height: 100px;
+  padding-right: 50px;
+}
+
+.menu-icons {
+  font-size: 20px;
 }
 
 a {
   margin: 0 28px;
   text-decoration: none;
   color: #181818;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  font-family: "Poppins";
+  font-family: "Helvetica";
 }
 
 .container {
@@ -41,15 +45,6 @@ a {
   position: absolute;
 }
 
-.inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 h1 {
   font-family: "Bebas Neue";
   font-size: 52px;
@@ -63,8 +58,6 @@ h1 {
 
 p {
   font-family: "Poppins";
-  margin-top: 200px;
-  width: 340px;
   font-weight: 300;
   line-height: 24px;
   font-size: 14px;

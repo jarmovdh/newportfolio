@@ -45,13 +45,13 @@ const Home = () => {
             id="main-container"
             data-scroll-container
           >
-            <div className="inner">
-              <Title
-                lineContent="QV Studio"
-                lineContent2={"Full Service Agency"}
-              />
-              <div>
-                <p className="info" data-scroll-section>
+            <div className="home-section">
+              <div className="home-section-left" data-scroll-section>
+                <Title
+                  lineContent="QV Studio"
+                  lineContent2={"Full Service Agency"}
+                />
+                <p className="info">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Harum explicabo sed voluptatem et pariatur corporis impedit
                   aperiam repellendus nesciunt illum. Sapiente facilis ea,
@@ -60,6 +60,21 @@ const Home = () => {
                   Ullam veniam modi asperiores similique neque nihil animi
                   eligendi perspiciatis possimus recusandae?
                 </p>
+              </div>
+
+              <div className="home-section-middle" data-scroll-section>
+                <p className="info">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Harum explicabo sed voluptatem et pariatur corporis impedit
+                  aperiam repellendus nesciunt illum. Sapiente facilis ea,
+                  eveniet vel possimus saepe tenetur quaerat, numquam architecto
+                  delectus libero molestias impedit esse reprehenderit nulla.
+                  Ullam veniam modi asperiores similique neque nihil animi
+                  eligendi perspiciatis possimus recusandae?
+                </p>
+              </div>
+              <div className="home-section-right" data-scroll-section>
+                <h3>Strategy, Design and Content</h3>
               </div>
             </div>
             <Featured />
