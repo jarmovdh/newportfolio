@@ -44,8 +44,6 @@
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  -webkit-transform: rotateY(0deg) rotate(90deg);
-          transform: rotateY(0deg) rotate(90deg);
   text-decoration: underline;
 }
 

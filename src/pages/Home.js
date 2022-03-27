@@ -7,6 +7,7 @@ import Gallery from "../components/Gallery/Gallery";
 
 import "./Home.scss";
 import useLocoScroll from "../hooks/useLocoSroll";
+import Slider from "../components/Slider/Slider";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -73,7 +74,7 @@ const Home = () => {
                   eligendi perspiciatis possimus recusandae?
                 </p>
                 <div>
-                  <img src="images/adidas1.jpg" alt="" width="100%" />
+                  <Slider />
                 </div>
               </div>
               <div className="home-section-right" data-scroll-section>
