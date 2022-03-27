@@ -22,14 +22,13 @@
 }
 .home-section-right {
   display: flex;
-  justify-content: flex-end;
   h3 {
     margin: 0;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     transform: rotateY(0deg) rotate(90deg);
-    border-bottom: 2px solid #191919;
+    text-decoration: underline;
   }
 }
 

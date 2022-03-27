@@ -37,9 +37,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .home-section-right h3 {
@@ -49,7 +46,7 @@
   text-transform: uppercase;
   -webkit-transform: rotateY(0deg) rotate(90deg);
           transform: rotateY(0deg) rotate(90deg);
-  border-bottom: 2px solid #191919;
+  text-decoration: underline;
 }
 
 .absolute {

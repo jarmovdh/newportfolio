@@ -72,6 +72,9 @@ const Home = () => {
                   Ullam veniam modi asperiores similique neque nihil animi
                   eligendi perspiciatis possimus recusandae?
                 </p>
+                <div>
+                  <img src="images/adidas1.jpg" alt="" width="100%" />
+                </div>
               </div>
               <div className="home-section-right" data-scroll-section>
                 <h3>Strategy, Design and Content</h3>
