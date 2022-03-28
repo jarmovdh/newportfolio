@@ -21,14 +21,16 @@
   }
 }
 .home-section-right {
-  display: flex;
   h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     // transform: rotateY(0deg) rotate(90deg);
     text-decoration: underline;
+  }
+  p {
+    font-size: 12px;
   }
 }
 
@@ -44,5 +46,5 @@
 
 .home-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }

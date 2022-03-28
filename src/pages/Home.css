@@ -33,12 +33,6 @@
   margin-top: 10px;
 }
 
-.home-section-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .home-section-right h3 {
   margin: 0;
   font-size: 20px;

@@ -63,22 +63,8 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="home-section-middle" data-scroll-section>
-                <p className="info">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Harum explicabo sed voluptatem et pariatur corporis impedit
-                  aperiam repellendus nesciunt illum. Sapiente facilis ea,
-                  eveniet vel possimus saepe tenetur quaerat, numquam architecto
-                  delectus libero molestias impedit esse reprehenderit nulla.
-                  Ullam veniam modi asperiores similique neque nihil animi
-                  eligendi perspiciatis possimus recusandae?
-                </p>
-                <div>
-                  <Slider />
-                </div>
-              </div>
               <div className="home-section-right" data-scroll-section>
-                <h3>Strategy, Design and Content</h3>
+                <Slider />
               </div>
             </div>
             <Featured />
