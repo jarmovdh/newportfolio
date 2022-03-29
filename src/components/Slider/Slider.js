@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "./Slider.scss";
 
 import leftArrow from "./assets/previous.svg";
@@ -26,12 +27,20 @@ const content = [
 ];
 
 const Slider = () => {
+  let imageList = useRef(null);
+  let textList = useRef(null);
+  let categoryList = useRef(null);
+
+  useEffect(() => {
+    console.log(imageList.children[0]);
+  }, []);
+
   return (
     <div className="home-slider-section">
       <div className="home-slider-container">
         <div className="column-left">
           <div className="slider-content-left">
-            <ul>
+            <ul ref={(el) => (textList = el)}>
               <li>
                 <div className="content-home">
                   <h3 className="title-project">{content[0].title}</h3>
@@ -65,7 +74,7 @@ const Slider = () => {
             </div>
           </div>
           <div className="slider-content-right">
-            <ul>
+            <ul ref={(el) => (categoryList = el)}>
               <li>
                 <div className="category-home">
                   <h3 className="category-project">{content[0].category}</h3>
@@ -86,7 +95,7 @@ const Slider = () => {
         </div>
         <div className="column-right">
           <div className="slider-image">
-            <ul>
+            <ul ref={(el) => (imageList = el)}>
               <li>
                 <img
                   src="./images/adidas1.jpg"
