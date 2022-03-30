@@ -16,7 +16,7 @@ const content = [
     title: "DIV. Amsterdam",
     category: "Photography",
     // image: require("./images/adidas1.jpg").default,
-    info: "Copywriting and Page description for NL adidas platform. Various Categories",
+    info: "Product Photography and editing for your website",
   },
   {
     title: "Porftolio",
@@ -36,7 +36,7 @@ const Slider = () => {
     isActive3: false,
   });
 
-  const imageWidth = 500;
+  const imageWidth = 600;
 
   useEffect(() => {
     gsap.to(categoryList.children[0], { duration: 0, opacity: 1 });
@@ -45,9 +45,48 @@ const Slider = () => {
 
   const slideLeft = (index, duration, multiplied = 1) => {
     gsap.to(imageList.children[index], {
-      duration: 1,
+      duration,
       x: -imageWidth * multiplied,
-      ease: Power3.easeIn,
+      ease: Power3.easeOut,
+    });
+  };
+
+  const slideRight = (index, duration, multiplied = 1) => {
+    gsap.to(imageList.children[index], {
+      duration,
+      x: imageWidth * multiplied,
+      ease: Power3.easeOut,
+    });
+  };
+
+  const scale = (index, duration) => {
+    gsap.from(imageList.children[index], {
+      duration,
+      scale: 1.2,
+      ease: Power3.easeOut,
+    });
+  };
+
+  const fadeOutText = (index, duration) => {
+    gsap.to(textList.children[index], duration, { opacity: 0 });
+  };
+
+  const fadeInText = (index, duration) => {
+    gsap.to(textList.children[index], duration, { opacity: 1, delay: 1 });
+  };
+
+  const fadeInCategory = (index, duration) => {
+    gsap.to(categoryList.children[index], {
+      duration,
+      opacity: 1,
+      delay: 1,
+    });
+  };
+
+  const fadeOutCategory = (index, duration) => {
+    gsap.to(categoryList.children[index], {
+      duration,
+      opacity: 0,
     });
   };
 
@@ -57,10 +96,78 @@ const Slider = () => {
 
       slideLeft(0, 1);
       slideLeft(1, 1);
+      scale(1, 1);
+
+      // Fade Title and copy
+      fadeOutText(0, 1);
+      fadeInText(1, 1);
+
+      // Fade Category
+      fadeOutCategory(0, 1);
+      fadeInCategory(1, 1);
     } else if (imageList.children[1].classList.contains("active")) {
       setState({ isActive2: false, isActive3: true });
+
+      slideRight(0, 1);
+      slideLeft(1, 1, 2);
+      slideLeft(2, 1, 2);
+      scale(2, 1);
+      //content transition
+      fadeOutText(1, 1);
+      fadeInText(2, 1);
+      fadeOutCategory(1, 1);
+      fadeInCategory(2, 1);
     } else if (imageList.children[2].classList.contains("active")) {
       setState({ isActive1: true, isActive3: false });
+      //Image transition
+      slideLeft(2, 1, 3);
+      slideLeft(0, 1, 0);
+      slideLeft(1, 0, 0);
+      scale(0, 1);
+      //content transition
+      fadeOutText(2, 1);
+      fadeInText(0, 1);
+      fadeOutCategory(2, 1);
+      fadeInCategory(0, 1);
+    }
+  };
+
+  const prevSlide = () => {
+    if (imageList.children[0].classList.contains("active")) {
+      setState({ isActive1: false, isActive3: true });
+
+      slideLeft(2, 0, 3);
+      slideLeft(2, 1, 2);
+      scale(2, 1);
+      slideRight(0, 1);
+      slideRight(1, 1);
+      fadeOutText(0, 1);
+      fadeInText(2, 1);
+      fadeOutCategory(0, 1);
+      fadeInCategory(2, 1);
+    } else if (imageList.children[1].classList.contains("active")) {
+      setState({ isActive2: false, isActive1: true });
+      slideLeft(0, 0);
+      slideRight(0, 1, 0);
+      slideRight(1, 1, 0);
+      slideRight(2, 1, 2);
+      scale(0, 1);
+      //content transtion
+      fadeOutText(1, 1);
+      fadeInText(0, 1);
+      fadeOutCategory(1, 1);
+      fadeInCategory(0, 1);
+    } else if (imageList.children[2].classList.contains("active")) {
+      setState({ isActive2: true, isActive3: false });
+      slideLeft(2, 1);
+      slideLeft(1, 0, 2);
+      slideLeft(1, 1);
+      scale(1, 1);
+      //content transtion
+      fadeOutText(2, 1);
+      fadeInText(1, 1);
+      fadeOutCategory(2, 1);
+      fadeInCategory(1, 1);
     }
   };
 
@@ -90,7 +197,7 @@ const Slider = () => {
               </li>
             </ul>
             <div className="arrows">
-              <div className="arrow-left">
+              <div onClick={prevSlide} className="arrow-left">
                 <span>
                   <img src={leftArrow} alt="left arrow" />
                 </span>
