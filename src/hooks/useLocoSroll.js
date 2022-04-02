@@ -11,7 +11,7 @@ export default function useLocoScroll(start) {
       el: scrollEl,
       smooth: true,
       multiplier: 1,
-      clalss: "is-reveal",
+      class: "is-reveal",
     });
   }, [start]);
 }
