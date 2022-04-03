@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-  padding: 0 50px;
+  padding: 0 2%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -34,20 +34,24 @@ a {
 }
 
 h1 {
-  font-family: "Bebas Neue";
-  font-size: 52px;
-  letter-spacing: 0.1rem;
+  color: #232323;
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-size: 102px;
+  line-height: 83px;
+  letter-spacing: -6.9px;
+  :hover {
+    color: #fe5900;
+  }
 }
+
 .line-wrap {
-  overflow: hidden;
-  height: 66px;
+  // overflow: hidden;
+  // height: 120px;
 }
 
 p {
-  font-family: "Poppins";
-  font-weight: 300;
-  line-height: 24px;
-  font-size: 14px;
+  color: #232323;
 }
 
 .page-enter {

@@ -8,6 +8,7 @@ import Gallery from "../components/Gallery/Gallery";
 import "./Home.scss";
 import useLocoScroll from "../hooks/useLocoSroll";
 import Slider from "../components/Slider/Slider";
+import { HeroFont } from "../components/HeroFont/HeroFont";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -49,26 +50,30 @@ const Home = () => {
             <div className="home-section">
               <div className="home-section-left" data-scroll-section>
                 <Title
-                  lineContent="QV Studio"
-                  lineContent2={"Full Service Agency"}
+                  lineContent="Q\V. Studio"
+                  lineContent2={"by Jarmo van der Heul"}
+                  lineContent3={"Full Service Agency"}
                 />
-                <p className="info">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Harum explicabo sed voluptatem et pariatur corporis impedit
-                  aperiam repellendus nesciunt illum. Sapiente facilis ea,
-                  eveniet vel possimus saepe tenetur quaerat, numquam architecto
-                  delectus libero molestias impedit esse reprehenderit nulla.
-                  Ullam veniam modi asperiores similique neque nihil animi
-                  eligendi perspiciatis possimus recusandae?
-                </p>
               </div>
 
               <div className="home-section-right" data-scroll-section>
-                <Slider />
+                <p className="info">
+                  QV Studio is an Amsterdam based creative agency with a focus
+                  on strategy, design and content. The studio operates globally
+                  across a range of assignments, from one-off projects to
+                  long-term partnerships, with a network of collaborators
+                  supporting the studio across disciplines. Feel free to contact
+                  us through hello@qvstudio.com
+                </p>
+                <p className="sub-line">
+                  an independent creative and collaborative studio based out of
+                  amsterdam
+                </p>
               </div>
             </div>
-            <Featured />
             <AboutSection />
+            <Featured />
+
             <Gallery />
           </div>
         </AnimatedPage>

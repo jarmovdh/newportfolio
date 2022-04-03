@@ -9,7 +9,7 @@
   h1 {
     font-size: 1.5vw;
     text-transform: uppercase;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-weight: 600;
   }
   h2 {
@@ -20,7 +20,11 @@
     margin-top: 10px;
   }
 }
+
 .home-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   h3 {
     margin: 0;
     font-size: 14px;
@@ -30,7 +34,11 @@
     text-decoration: underline;
   }
   p {
-    font-size: 12px;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 18px;
+    font-weight: 500;
   }
 }
 
@@ -46,5 +54,15 @@
 
 .home-section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.home-section-left {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.sub-line {
+  display: flex;
+  align-content: flex-end;
 }

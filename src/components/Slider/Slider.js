@@ -176,26 +176,33 @@ const Slider = () => {
       <div className="home-slider-container">
         <div className="column-left">
           <div className="slider-content-left">
-            <ul ref={(el) => (textList = el)}>
-              <li className={state.isActive1 ? "active" : ""}>
-                <div className="content-home">
-                  <h3 className="title-project">{content[0].title}</h3>
-                  <p className="info">{content[0].info}</p>
-                </div>
-              </li>
-              <li className={state.isActive2 ? "active" : ""}>
-                <div className="content-home">
-                  <h3 className="title-project">{content[1].title}</h3>
-                  <p className="info">{content[1].info}</p>
-                </div>
-              </li>
-              <li className={state.isActive3 ? "active" : ""}>
-                <div className="content-home">
-                  <h3 className="title-project">{content[2].title}</h3>
-                  <p className="info">{content[2].info}</p>
-                </div>
-              </li>
-            </ul>
+            <div className="content-list">
+              <ul ref={(el) => (textList = el)}>
+                <li className={state.isActive1 ? "active" : ""}>
+                  <div className="content-home">
+                    <h3 className="title-project">{content[0].title}</h3>
+                    <h4 className="category-project">{content[0].category}</h4>
+                    <p className="info">{content[0].info}</p>
+                  </div>
+                </li>
+                <li className={state.isActive2 ? "active" : ""}>
+                  <div className="content-home">
+                    <h3 className="title-project">{content[1].title}</h3>
+                    <h4 className="category-project">{content[1].category}</h4>
+
+                    <p className="info">{content[1].info}</p>
+                  </div>
+                </li>
+                <li className={state.isActive3 ? "active" : ""}>
+                  <div className="content-home">
+                    <h3 className="title-project">{content[2].title}</h3>
+                    <h4 className="category-project">{content[2].category}</h4>
+
+                    <p className="info">{content[2].info}</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div className="arrows">
               <div onClick={prevSlide} className="arrow-left">
                 <span>
@@ -209,6 +216,7 @@ const Slider = () => {
               </div>
             </div>
           </div>
+
           <div className="slider-content-right">
             <ul ref={(el) => (categoryList = el)}>
               <li className={state.isActive1 ? "active" : ""}>

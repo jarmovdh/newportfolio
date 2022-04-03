@@ -1,0 +1,30 @@
+.hometop {
+  width: 66%;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Manrope", sans-serif;
+}
+
+.site-title {
+  font-family: "Manrope", sans-serif;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 10em;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: flex-end;
+  font-weight: 500;
+  z-index: 2;
+}
