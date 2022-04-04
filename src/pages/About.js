@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedPage from "../components/AnimatedPage";
-import { Title } from "../components/Title";
+import { Title } from "../components/Title/Title";
 
 const About = () => {
   return (

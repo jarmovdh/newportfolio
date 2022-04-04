@@ -25,12 +25,15 @@ a {
 
 .container {
   padding: 0 2%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 .page {
   position: absolute;
+}
+
+.page-title {
+  height: 95%;
 }
 
 h1 {

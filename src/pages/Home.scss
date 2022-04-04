@@ -1,3 +1,7 @@
+.main-container {
+  width: 95vw;
+  margin: 0;
+}
 .loader-wrapper {
   display: flex;
   align-items: center;
@@ -65,4 +69,17 @@
 .sub-line {
   display: flex;
   align-content: flex-end;
+}
+
+.arrow-down {
+  height: 5%;
+  display: flex;
+}
+
+.info-topics {
+  color: #fe5900;
+  text-decoration: underline;
+}
+
+.horizontal-section {
 }

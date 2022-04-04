@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import AnimatedPage from "../components/AnimatedPage";
-import { Title } from "../components/Title";
+import { Title } from "../components/Title/Title";
 import Featured from "../components/Featured/Featured";
 import AboutSection from "../components/AboutSection/AboutSection";
-import Gallery from "../components/Gallery/Gallery";
+import arrowDown from "./assets/down-arrow.svg";
 
 import "./Home.scss";
 import useLocoScroll from "../hooks/useLocoSroll";
 import Slider from "../components/Slider/Slider";
 import { HeroFont } from "../components/HeroFont/HeroFont";
+import Horizontal from "../components/Horizontal/Horizontal";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -54,16 +55,24 @@ const Home = () => {
                   lineContent2={"by Jarmo van der Heul"}
                   lineContent3={"Full Service Agency"}
                 />
+                <div className="arrow-down">
+                  <img
+                    className="arrow-down-icon"
+                    src={arrowDown}
+                    alt="left arrow"
+                  />
+                </div>
               </div>
 
               <div className="home-section-right" data-scroll-section>
                 <p className="info">
                   QV Studio is an Amsterdam based creative agency with a focus
-                  on strategy, design and content. The studio operates globally
-                  across a range of assignments, from one-off projects to
-                  long-term partnerships, with a network of collaborators
-                  supporting the studio across disciplines. Feel free to contact
-                  us through hello@qvstudio.com
+                  on <span className="info-topics">strategy, design</span> and
+                  <span className="info-topics"> content</span>. The studio
+                  operates globally across a range of assignments, from one-off
+                  projects to long-term partnerships, with a network of
+                  collaborators supporting the studio across disciplines. Feel
+                  free to contact us through hello@qvstudio.com
                 </p>
                 <p className="sub-line">
                   an independent creative and collaborative studio based out of
@@ -71,10 +80,12 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="horizontal-section" data-scroll-section>
+              <Horizontal />
+            </div>
+
             <AboutSection />
             <Featured />
-
-            <Gallery />
           </div>
         </AnimatedPage>
       )}
