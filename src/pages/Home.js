@@ -7,8 +7,6 @@ import arrowDown from "./assets/down-arrow.svg";
 
 import "./Home.scss";
 import useLocoScroll from "../hooks/useLocoSroll";
-import Slider from "../components/Slider/Slider";
-import { HeroFont } from "../components/HeroFont/HeroFont";
 import Horizontal from "../components/Horizontal/Horizontal";
 
 const Home = () => {
