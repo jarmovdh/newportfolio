@@ -4,6 +4,7 @@ import { Title } from "../components/Title/Title";
 import Featured from "../components/Featured/Featured";
 import AboutSection from "../components/AboutSection/AboutSection";
 import arrowDown from "./assets/down-arrow.svg";
+import ServiceSection from "../components/ServiceSection/ServiceSection";
 
 import "./Home.scss";
 import useLocoScroll from "../hooks/useLocoSroll";
@@ -83,6 +84,7 @@ const Home = () => {
             </div>
 
             <AboutSection />
+            <ServiceSection />
             <Featured />
           </div>
         </AnimatedPage>
