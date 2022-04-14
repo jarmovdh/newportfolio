@@ -6,8 +6,8 @@ const ServiceSection = () => {
     <div data-scroll-section>
       <div className="row">
         <div className="s-column">
-          <h1>01</h1>
-          <h2>Strategy</h2>
+          <h1>Strategy</h1>
+          <h2>01</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
             blanditiis vitae necessitatibus molestiae quidem voluptatum omnis
@@ -18,8 +18,8 @@ const ServiceSection = () => {
           </p>
         </div>
         <div className="s-column">
-          <h1>02</h1>
-          <h2>Design</h2>
+          <h1>Design</h1>
+          <h2>02</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
             blanditiis vitae necessitatibus molestiae quidem voluptatum omnis
@@ -30,8 +30,8 @@ const ServiceSection = () => {
           </p>
         </div>
         <div className="s-column">
-          <h3>03</h3>
-          <h2>Development</h2>
+          <h1>Development</h1>
+          <h2>03</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
             blanditiis vitae necessitatibus molestiae quidem voluptatum omnis
@@ -43,6 +43,7 @@ const ServiceSection = () => {
         </div>
         <div className="s-column">
           <h1>Content</h1>
+          <h2>04</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
             blanditiis vitae necessitatibus molestiae quidem voluptatum omnis
@@ -51,7 +52,6 @@ const ServiceSection = () => {
             omnis ab hic laborum a tenetur. Sint recusandae deserunt, nihil
             tempora aspernatur voluptatibus quia?
           </p>
-          <h2>04</h2>
         </div>
       </div>
     </div>

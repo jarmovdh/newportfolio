@@ -1,8 +1,17 @@
 .row {
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 10px;
   color: #181818;
+
+  h1 {
+    color: #232323;
+    font-size: 5em;
+  }
+  .s-column {
+    border-left: 3px solid #fe5900;
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
