@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SplitText from "../../utilis/Split3.min.js";
 import useOnScreen from "../../hooks/useOnSreen";
-import SectionHeader from "../SectionHeader/SectionHeader";
 import cn from "classnames";
 import "./AboutSection.scss";
 
@@ -34,7 +33,6 @@ const AboutSection = () => {
 
   return (
     <section className={cn("about-section")} data-scroll-section>
-      <SectionHeader title="about" />
       <p
         ref={ref}
         className={cn("about-text", { "is-reveal": reveal })}

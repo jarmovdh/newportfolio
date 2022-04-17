@@ -17,5 +17,10 @@
 @media only screen and (max-width: 600px) {
   .row {
     flex-direction: column;
+    .s-column {
+      border-bottom: 3px solid #fe5900;
+      border-left: none;
+      padding-left: 0;
+    }
   }
 }
