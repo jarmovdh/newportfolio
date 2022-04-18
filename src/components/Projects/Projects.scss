@@ -1,54 +1,38 @@
-/* Style the accordion section */
-.projects_section {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
 .projects {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+}
+
+.item h1 {
+  color: #232323;
+}
+
+.title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #232323;
-  border: none;
-
-  outline: none;
-  transition: background-color 0.6s ease;
+  color: #232323;
+  cursor: pointer;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.projects:hover,
-.active {
-  background-color: #ccc;
+.content {
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
-/* Style the accordion content title */
-.projects_title {
-  text-align: left;
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-/* Style the accordion chevron icon */
 .projects_icon {
   margin-left: auto;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease-in-out;
 }
 
 /* Style to rotate icon when state is active */
 .rotate {
   transform: rotate(90deg);
-}
-
-/* Style the accordion content panel. Note: hidden by default */
-.projects_content {
-  background-color: white;
-  overflow: auto;
-  transition: max-height 0.6s ease;
-}
-
-/* Style the accordion content text */
-.projects_text {
-  font-weight: 400;
-  padding: 18px;
+  transition: transform 0.6s ease-in-out;
 }

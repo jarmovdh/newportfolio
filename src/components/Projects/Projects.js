@@ -2,40 +2,69 @@ import React, { useState, useRef } from "react";
 import "./Projects.scss";
 import Arrow from "./Arrow";
 
-const Projects = (props) => {
-  const [setActive, setActiveState] = useState("");
-  const [setHeight, setHeightState] = useState("0px");
-  const [setRotate, setRotateState] = useState("projects_icon");
-  const content = useRef(null);
+const Projects = () => {
+  const [selected, setSelected] = useState(null);
 
-  function toggleAccordion() {
-    setActiveState(setActive === "" ? "active" : "");
-    setHeightState(
-      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
-    );
-    setRotateState(
-      setActive === "active" ? "projects_icon" : "projects_icon rotate"
-    );
-  }
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
 
   return (
     <div className="projects_section" data-scroll-section>
-      <button className={`projects ${setActive}`} onClick={toggleAccordion}>
-        <h1 className="projects_title">{props.title}</h1>
-        <Arrow width={50} className={`${setRotate}`} />
-      </button>
-      <div
-        ref={content}
-        style={{ maxHeight: `${setHeight}` }}
-        className="projects_content"
-      >
-        <div
-          className="projects_text"
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
+      <div className="projects">
+        {data.map((item, i) => (
+          <div className="item">
+            <div className="title" onClick={() => toggle(i)}>
+              <h1>{item.title}</h1>
+              <Arrow
+                width={50}
+                className={selected === i ? "rotate" : "projects_icon"}
+              />
+            </div>
+            <div className={selected === i ? "content show" : "content"}>
+              {item.content}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
+
+const data = [
+  {
+    title: "adidas",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+  {
+    title: "DIV. Amsterdam",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+  {
+    title: "Studio Pands",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+  {
+    title: "Portraits",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+  {
+    title: "Studio Pands",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+  {
+    title: "Goldkimono",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+  },
+];
 
 export default Projects;
