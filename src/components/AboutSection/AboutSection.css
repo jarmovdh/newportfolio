@@ -1,0 +1,19 @@
+.about-section p {
+  font-family: "Helvetica Neue";
+  font-size: 102px;
+  line-height: 83px;
+  letter-spacing: -6.9px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.about-section p > div {
+  opacity: 0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.about-section p.is-reveal {
+  opacity: 1;
+}
+/*# sourceMappingURL=AboutSection.css.map */

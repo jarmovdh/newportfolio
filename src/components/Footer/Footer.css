@@ -1,0 +1,29 @@
+.footer {
+  color: #232323;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+  border-top: 2px solid #232323;
+}
+
+.footer p {
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+/*# sourceMappingURL=Footer.css.map */

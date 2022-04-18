@@ -4,6 +4,7 @@ $secondary-color: #fe5900;
 
 body {
   background-color: #f1efed;
+  box-sizing: border-box;
 }
 .header {
   display: flex;
@@ -28,7 +29,6 @@ a {
 .container {
   padding: 0 2%;
   display: flex;
-  justify-content: center;
 }
 .page {
   position: absolute;
