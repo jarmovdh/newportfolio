@@ -26,6 +26,9 @@ const Projects = () => {
             </div>
             <div className={selected === i ? "content show" : "content"}>
               {item.content}
+              <div className="test">
+                <h1>{item.image}</h1>
+              </div>
             </div>
           </div>
         ))}
@@ -39,6 +42,7 @@ const data = [
     title: "adidas",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+    image: "image",
   },
   {
     title: "DIV. Amsterdam",
@@ -49,11 +53,13 @@ const data = [
     title: "Studio Pands",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+    image: "image",
   },
   {
     title: "Portraits",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
+    image: "image",
   },
   {
     title: "Studio Pands",
