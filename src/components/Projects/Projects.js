@@ -1,6 +1,10 @@
 import React, { useState, useRef } from "react";
 import "./Projects.scss";
 import Arrow from "./Arrow";
+import adidas from "./adidas1.jpg";
+
+import AboutSlider from "../AboutSlider/AboutSlider";
+import { SliderData } from "../AboutSlider/SliderData";
 
 const Projects = () => {
   const [selected, setSelected] = useState(null);
@@ -25,10 +29,8 @@ const Projects = () => {
               />
             </div>
             <div className={selected === i ? "content show" : "content"}>
+              <div>{item.images}</div>
               {item.content}
-              <div className="test">
-                <h1>{item.image}</h1>
-              </div>
             </div>
           </div>
         ))}
@@ -42,7 +44,11 @@ const data = [
     title: "adidas",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
-    image: "image",
+    images: (
+      <div>
+        <AboutSlider />
+      </div>
+    ),
   },
   {
     title: "DIV. Amsterdam",

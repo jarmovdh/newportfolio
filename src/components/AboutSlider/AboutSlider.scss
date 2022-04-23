@@ -1,5 +1,4 @@
 .slider {
-  height: 30vh;
   margin: auto;
   position: relative;
   width: 90%;
@@ -9,7 +8,7 @@
 
 .slide-track {
   display: flex;
-  width: calc(30vh * 8);
+  width: calc(600px * 2);
   animation: scroll 40s linear infinite;
 }
 
@@ -22,13 +21,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-400px * 4));
+    transform: translateX(calc(-200px * 4));
   }
 }
 
 .slide {
-  height: 30vh;
-  width: 400px;
+  height: auto;
+  width: 600px;
   display: flex;
   align-items: center;
   padding: 15px;
