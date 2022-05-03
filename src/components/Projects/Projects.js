@@ -1,10 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./Projects.scss";
 import Arrow from "./Arrow";
-import adidas from "./adidas1.jpg";
 
 import AboutSlider from "../AboutSlider/AboutSlider";
-import { SliderData } from "../AboutSlider/SliderData";
+import images from "./images";
 
 const Projects = () => {
   const [selected, setSelected] = useState(null);
@@ -50,7 +49,7 @@ const data = [
           <div>
             <div style={{ padding: 8 }}>
               <img
-                src="https://via.placeholder.com/300x300"
+                src={images.image1}
                 alt="placeholder"
                 style={{ width: "100%" }}
               />
@@ -59,7 +58,7 @@ const data = [
           <div>
             <div style={{ padding: 8 }}>
               <img
-                src="https://via.placeholder.com/300x300"
+                src={images.image2}
                 alt="placeholder"
                 style={{ width: "100%" }}
               />
@@ -97,7 +96,7 @@ const data = [
           <div>
             <div style={{ padding: 8 }}>
               <img
-                src="https://via.placeholder.com/300x300"
+                src={images.image3}
                 alt="placeholder"
                 style={{ width: "100%" }}
               />
