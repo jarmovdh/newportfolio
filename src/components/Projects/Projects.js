@@ -45,7 +45,7 @@ const data = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
     images: (
       <div>
-        <AboutSlider show={3} infiniteLoop={true}>
+        <AboutSlider show={3} infiniteLoop={true} data-scroll-section>
           <div>
             <div style={{ padding: 8 }}>
               <img

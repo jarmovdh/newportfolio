@@ -9,9 +9,7 @@ const Header = () => {
       <NavLink to="/About">About</NavLink>
       <NavLink to="/About">Work</NavLink>
       <NavLink to="/About">Contact</NavLink>
-      <NavLink to="/About">
-        <BiDotsHorizontalRounded className="menu-icons" />
-      </NavLink>
+      <NavLink to="/About"></NavLink>
     </div>
   );
 };

@@ -97,7 +97,7 @@ const AboutSlider = (props) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" data-scroll-section>
       <div className="carousel-wrapper">
         {/* You can alwas change the content of the button to other things */}
         {(isRepeating || currentIndex > 0) && (
