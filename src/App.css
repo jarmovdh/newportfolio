@@ -87,4 +87,15 @@ p {
 .page-exit-active {
   opacity: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: #232323;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-size: 102px;
+    line-height: 83px;
+    letter-spacing: -6.9px;
+  }
+}
 /*# sourceMappingURL=App.css.map */

@@ -1,8 +1,13 @@
 import React from "react";
+import image from "./assets/testimage.jpg"
 
 const ContactSection = () => {
   return (
     <div className="contact" data-scroll-section>
+      <img className="image-test" src={image} alt="testimage" max-width="100%"
+ />
+
+
       <h1>Contact</h1>
       <h2>hello@qvstudio.com</h2>
       <p>

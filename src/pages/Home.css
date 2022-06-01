@@ -125,4 +125,14 @@ li {
   color: #fe5900;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+  .home-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+}
 /*# sourceMappingURL=Home.css.map */

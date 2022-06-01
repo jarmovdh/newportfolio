@@ -48,4 +48,15 @@
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: #232323;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: -2.9px;
+  }
+}
 /*# sourceMappingURL=Projects.css.map */

@@ -91,3 +91,12 @@ li {
   color: #fe5900;
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .home-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+}

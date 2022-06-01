@@ -4,10 +4,6 @@
   border-bottom: 2px solid black;
 }
 
-.item h1 {
-  color: darkgrey;
-}
-
 .item :hover {
   color: #fe5900;
 }
@@ -72,9 +68,6 @@ p {
     padding: 10px;
     border-bottom: 2px solid black;
   }
-  .item h1 {
-    color: darkgrey;
-  }
   .item :hover {
     color: #fe5900;
   }
@@ -90,9 +83,6 @@ p {
     min-width: 21em;
     padding: 10px;
     border-bottom: 2px solid black;
-  }
-  .item h1 {
-    color: darkgrey;
   }
   .item :hover {
     color: #fe5900;

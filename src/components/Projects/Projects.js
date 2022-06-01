@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "./Projects.scss";
 import Arrow from "./Arrow";
 
+import ProjectSlider from "../ProjectSlider/ProjectSlider";
 import AboutSlider from "../AboutSlider/AboutSlider";
 import images from "./images";
 
@@ -138,7 +139,12 @@ const data = [
     title: "Studio Pands",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
-    image: "image",
+    image: (
+      <div>
+      <ProjectSlider>      </ProjectSlider>
+
+      </div>
+    ),
   },
   {
     title: "Portraits",
