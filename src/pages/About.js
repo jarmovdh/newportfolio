@@ -8,7 +8,7 @@ const About = () => {
     <AnimatedPage>
       <div className="main-container" id="main-container" data-scroll-container>
         <div className="inner">
-          <Projects />
+          <Projects data-scroll-container />
 
           <Footer />
         </div>
