@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { SliderData } from "./SliderData";
 import "./AboutSlider.scss";
 
 const AboutSlider = (props) => {

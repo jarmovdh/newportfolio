@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
+import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -10,37 +10,33 @@ import "swiper/css/navigation";
 import "./ProjectSlider.scss";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
 
 const ProjectSlider = () => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
+        slidesPerView={1}
+        spaceBetween={10}
         loop={true}
-        loopFillGroupWithBlank={true}
         pagination={{
-          clickable: true,
+          dynamicBullets: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
         breakpoints={{
           640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
         }}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -54,8 +50,6 @@ const ProjectSlider = () => {
       </Swiper>
     </>
   );
-}
-
-
+};
 
 export default ProjectSlider;

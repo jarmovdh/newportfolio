@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./Projects.scss";
 import Arrow from "./Arrow";
 
@@ -10,7 +10,7 @@ const Projects = () => {
   const [selected, setSelected] = useState(null);
 
   const toggle = (i) => {
-    if (selected == i) {
+    if (selected === i) {
       return setSelected(null);
     }
     setSelected(i);
@@ -139,10 +139,9 @@ const data = [
     title: "Studio Pands",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor voluptatibus, odio, repudiandae similique ea numquam recusandae reprehenderit fugiat iure eos fuga eius assumenda tempore rerum tenetur laborum esse eligendi beatae molestiae et suscipit ipsam aspernatur. Numquam vero, error alias ipsa molestias, sed et sapiente eum, praesentium aperiam minima mollitia a!",
-    image: (
+    images: (
       <div>
-      <ProjectSlider>      </ProjectSlider>
-
+        <ProjectSlider> </ProjectSlider>
       </div>
     ),
   },
