@@ -6,7 +6,7 @@ const ServiceSection = () => {
     <div data-scroll-section>
       <div className="row">
         <div className="s-column">
-          <h1>Strategy</h1>
+          <h3>Strategy</h3>
           <h2>01</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -18,7 +18,7 @@ const ServiceSection = () => {
           </p>
         </div>
         <div className="s-column">
-          <h1>Design</h1>
+          <h3>Design</h3>
           <h2>02</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -30,7 +30,7 @@ const ServiceSection = () => {
           </p>
         </div>
         <div className="s-column">
-          <h1>Development</h1>
+          <h3>Development</h3>
           <h2>03</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -42,7 +42,7 @@ const ServiceSection = () => {
           </p>
         </div>
         <div className="s-column">
-          <h1>Content</h1>
+          <h3>Content</h3>
           <h2>04</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel

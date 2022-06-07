@@ -1,3 +1,7 @@
+.contact{
+  padding-top:50px;
+}
+
 ul {
   li {
     p {
@@ -10,6 +14,14 @@ ul {
   }
 }
 
+.contact-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .image-test {
-  max-width: 100%;
+  max-width: 100%; 
+  padding-top: 50px;
 }
